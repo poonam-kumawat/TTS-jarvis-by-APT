@@ -178,6 +178,10 @@ int main()
         else
         {
             cout << "IN-COREECT PASSWORD" << endl;
+            string phrase=" incorrect password";
+            string command="espeak \" "+ phrase +"\"";
+            const char *charCommand=command.c_str();
+            system(charCommand);
         }
 
     } while (1);
